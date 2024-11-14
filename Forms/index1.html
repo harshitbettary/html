@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Forms</title>
+</head>
+<body>
+    <!-- drop downs -->
+     <select name="vehicle">
+        <option value="AUDI">AUDI</option>
+        <option value="Toyota">Toyota</option>
+        <option value="Benz">Benz</option>
+        <option value="RollsRoyce">RollsRoyce</option>
+     </select>
+     <button>Submit</button>
+     <!-- create a dropdown of engineering branches -->
+      <br>
+      <select name="Branches in engineering" id="br" >
+        <optgroup label="engin">
+        <option value="cse">CSE</option>
+        <option value="csm">CSM</option>
+        <option value="civil">CIVIL</option>
+       </optgroup> 
+        <optgroup label="Engi">
+            <option value="ece">ECE</option>
+            <option value="mech">MECH</option>
+            <option value="eee">EEE</option>
+        </optgroup>
+      </select>
+
+      <!-- form validations -->
+       <form action="main.py">
+        <input type="text" name="un" id="un" placeholder="username" value="harshit" required readonly disabled>
+        <input type="text" name="ln" id="ln" placeholder="lastname">
+        <input type="email" name="em" id="em" placeholder="enter email">
+        <input type="password" name="n" id="n" placeholder="enter password" minlength="8">
+        <input type="number" name="age" id="age" placeholder="enter age" min="10" max="50">
+        <button>Submit</button> 
+       </form>
+</body>
+</html>

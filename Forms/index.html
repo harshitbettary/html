@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+</head>
+<body>
+    <h1>Login Form</h1>
+    <form action="main.java">
+        <div>
+            <label for="fn">Firstname</label>
+            <input type="text" id="fn"><br><br>
+            <label for="ln">LastName</label>
+            <input type="text" id="ln">
+        </div><br>
+        <div>
+            <label for="em">Email</label>
+            <input type="email" id="em"><br>
+        </div><br>
+        <div>
+            <label for="dob">Date of Birth</label>
+            <input type="date" name="dob" id="dob">
+        </div><br>
+
+        <div>
+            <label for="mobno">Mobile Number</label>
+            <input type="number" name="mobno" id="mobno">
+        </div> <br>
+        <div>
+            <label for="cl">Choose a Colour</label>
+            <input type="color" name="color" id="cl">
+        </div><br>
+
+        <div>
+            <label for="dtl">Prefer a time slot</label>
+            <input type="datetime-local" name="datetime-local" id="dtl">
+        </div><br>
+
+        <div>
+        <label for="fl">Upload the file</label>
+        <input type="file" name="file" id="fl">
+        </div><br>
+
+        <div>
+            <input type="hidden" name="batch" value="42">
+        </div><br>
+        
+        <div>
+            <label for="wk">Week</label>
+            <input type="week" name="week" id="wk"><br><br>
+
+            <label for="tm">Time</label>
+            <input type="time" name="time" id="tm"><br><br>
+            <label for="url">Url</label>
+            <input type="url" name="url" id="url">
+        </div><br>
+
+        <div>
+            <!-- radio buttons -->
+             <p>Select Gender</p>
+             <input type="radio" name="gender" id="m">
+             <label for="m">Male</label>
+
+             <input type="radio" name="gender" id="f">
+             <label for="f">Female</label>
+        </div><br>
+
+        <!-- create a choice of 3 radio buttons to choose MPC,BIPC,MEC -->
+         <div>
+            <p>Select a course:</p>
+            <input type="radio" name="sub" id="mpc">
+            <label for="mpc">MPC</label>
+
+            <input type="radio" name="sub" id="bipc">
+            <label for="bipc">BIPC</label>
+
+            <input type="radio" name="sub" id="mec">
+            <label for="mec">MEC</label>
+         </div><br>
+
+         <!-- check boxes -->
+          <div>
+            <p>Select a language</p>
+            <input type="checkbox" name="lang" id="en">
+            <label for="en">English</label>
+            <input type="checkbox" name="lang" id="te">
+            <label for="te">Telugu</label>
+            <input type="checkbox" name="lang" id="mr">
+            <label for="mr">Marathi</label>
+            <input type="checkbox" name="lang" id="ch">
+            <label for="ch">Chinese</label>
+
+          </div><br>
+        <label for="pwd">Password:</label>
+        <input type="password" id="pwd"><br>
+        <button>Submit</button>
+        <input type="reset" value="reset">
+    </form>
+    
+</body>
+</html>
